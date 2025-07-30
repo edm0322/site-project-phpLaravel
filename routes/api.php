@@ -22,3 +22,6 @@ Route::delete('/users/{id}', [UserController::class, 'destroy']);
 
 // 게시글 관련 라우팅 설정
 Route::get('/users/{id}/posts', [PostController::class, "indexByUser"]);
+
+// 게시글 작성 저장 라우팅 설정
+Route::post('/posts', [PostController::class, 'store']);
