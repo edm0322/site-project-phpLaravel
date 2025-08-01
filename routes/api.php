@@ -25,3 +25,5 @@ Route::get('/users/{id}/posts', [PostController::class, "indexByUser"]);
 
 // 게시글 작성 저장 라우팅 설정
 Route::post('/posts', [PostController::class, 'store']);
+
+// 테스트 푸시
